@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "banner banner banner"
+    "col1 col2 col3";
+  gap: 1rem;
+}
+
+header {
+  padding: 1rem;
+}
+
+h1 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.8rem;
+  font-family: "Merriweather";
+}
+
+h2, h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.5rem;
+  font-family: "Merriweather";
+}
+
+.banner-text {
+  /* color: white */
+}
+
+.banner-img {
+  grid-area: banner;
+}
+
+img {
+  width: 100%;
+}
+
+dt {
+  font-style: italic;
+}
